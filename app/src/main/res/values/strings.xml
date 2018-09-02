@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">multiThreadTest2</string>
+
+    <string name="message">Input number</string>
+    <string name="change">Execute</string>
+    <string name="elapsed">DalVik : 0 ms</string>
+    <string name="elapsedJni">Native : 0 ms</string>
+    <string name="clear">Clear</string>
+
 </resources>
