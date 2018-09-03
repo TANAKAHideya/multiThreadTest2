@@ -52,8 +52,8 @@ void func( struct param * x) {
 //	__android_log_print(ANDROID_LOG_ERROR,"sum-jni","func %d %d %lld\n",x->tno, x->endNum, sum_func[x->tno]);
 }
 
-jlong
-Java_com_example_smpapp_SmpAppActivity_sumFromJNI (JNIEnv* env, jobject thiz, jint endNum, jint tno, jboolean debug)
+JNIEXPORT jlong JNICALL
+Java_com_example_hide_multithreadtest2_MainActivity_sumFromJNI (JNIEnv* env, jobject thiz, jint endNum, jint tno, jboolean debug)
 {
     struct param param[MAX_THREADS];
     pthread_t t[MAX_THREADS];
